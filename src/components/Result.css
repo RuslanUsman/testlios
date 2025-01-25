@@ -1,0 +1,64 @@
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-image: url('/public/images/fonresultat.jpg'); /* Убедитесь, что изображение находится в папке public/images */
+  background-size: cover; /* Масштабируем изображение, чтобы оно покрывало весь экран */
+  background-position: center; /* Центрируем изображение */
+}
+
+.result h1 {
+  font-size: 24px;
+  color: #262c22; /* Изменяем цвет заголовка */
+  margin-bottom: 2px;
+}
+
+.result p {
+  font-size: 20px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.result table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.result table, .result th, .result td {
+  border: 2px solid #8a0a0a; /* Добавляем границу */
+}
+
+.result th, .result td {
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Добавляем полупрозрачный фоновый цвет */
+}
+
+.result th {
+  background-color: #8295a1; /* Добавляем фоновый цвет для заголовков таблицы */
+  color: #c2eea2; /* Изменяем цвет текста заголовков таблицы */
+}
+
+.result tfoot td {
+  font-weight: bold;
+  background-color: #8ac51c; /* Добавляем фоновый цвет для итогов */
+  color: #fff; /* Изменяем цвет текста итогов */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px; /* Добавляем отступ сверху */
+}
+
+button:hover {
+  background-color: #218838;
+}

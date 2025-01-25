@@ -1,0 +1,74 @@
+.material-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-image: url('/public/images/fonmenu.jpg'); /* Убедитесь, что изображение находится в папке public/images */
+  background-size: cover; /* Масштабируем изображение, чтобы оно покрывало весь экран */
+  background-position: center; /* Центрируем изображение */
+}
+
+.material-selection h1 {
+  font-size: 40px;
+  color: #c2eea2; /* Изменяем цвет текста */
+}
+
+.items-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 10px; /* Добавляем отступы между объектами */
+  padding: 20px; /* Добавляем внутренние отступы */
+  background-color: #8295a1; /* Добавляем фоновый цвет */
+  border: 2px solid #8ac51c; /* Добавляем границу */
+  border-radius: 20px; /* Закругляем углы */
+  box-shadow: 0 4px 8px rgba(122, 9, 9, 0.852); /* Добавляем тень */
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.item p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #c2eea2; /* Изменяем цвет текста */
+}
+
+.item:hover {
+  transform: scale(1.05); /* Увеличиваем масштаб при наведении */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 2); /* Увеличиваем тень при наведении */
+}
+
+@media (max-width: 768px) {
+  .items-container {
+    grid-template-columns: repeat(2, 1fr); /* Два столбика на планшетах */
+  }
+
+  .item p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .items-container {
+    grid-template-columns: repeat(2, 1fr); /* Два столбика на телефонах */
+  }
+
+  .item p {
+    font-size: 14px;
+  }
+}
+
